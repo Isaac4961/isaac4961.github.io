@@ -408,3 +408,35 @@ color:#00bfff;
 font-weight:600;
 
 }
+
+@media (max-width:480px){
+
+.loader-name{
+
+font-size:32px;
+
+letter-spacing:2px;
+
+padding:0 15px;
+
+}
+
+#loaderText{
+
+font-size:24px;
+
+}
+
+#loaderSubText{
+
+font-size:15px;
+
+}
+
+.loader-bar{
+
+width:75%;
+
+}
+
+}
