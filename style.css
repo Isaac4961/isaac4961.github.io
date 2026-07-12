@@ -81,22 +81,24 @@ color:#999;
 
 .hero{
 
-height:100vh;
-
+min-height:100dvh;
+  
 display:flex;
 
 justify-content:center;
 
 align-items:center;
 
-padding:20px;
+padding:20px 15px;
 
 }
 
 .glass{
 
 width:92%;
-
+  
+margin:auto;
+  
 max-width:380px;
 
 padding:25px;
