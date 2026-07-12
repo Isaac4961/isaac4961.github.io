@@ -1,18 +1,42 @@
 AOS.init();
 
+const loadingTexts=[
+"Initializing...",
+"Loading Portfolio...",
+"Loading AI Experience...",
+"Loading Creativity...",
+"Welcome, Explorer."
+];
+
+let loaderIndex=0;
+
+const loaderInterval=setInterval(()=>{
+
+document.getElementById("loaderText").innerHTML=loadingTexts[loaderIndex];
+
+loaderIndex++;
+
+if(loaderIndex==loadingTexts.length){
+
+clearInterval(loaderInterval);
+
+}
+
+},800);
+
 window.onload=function(){
 
-setTimeout(function(){
+setTimeout(()=>{
 
 document.getElementById("loader").style.opacity="0";
 
-setTimeout(function(){
+setTimeout(()=>{
 
 document.getElementById("loader").style.display="none";
 
 },1000);
 
-},2000);
+},4500);
 
 }
 
