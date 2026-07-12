@@ -236,5 +236,102 @@ transform:translateY(10px);
 transform:translateY(-10px);
 
 }
+  
+}
+
+.loader-content{
+text-align:center;
+}
+
+.logo-circle{
+
+width:120px;
+height:120px;
+
+border-radius:50%;
+
+border:3px solid #00bfff;
+
+display:flex;
+
+justify-content:center;
+
+align-items:center;
+
+font-size:42px;
+
+font-weight:700;
+
+margin:auto;
+
+box-shadow:0 0 40px #00bfff;
+
+animation:pulse 2s infinite;
+
+}
+
+.loader-bar{
+
+width:280px;
+
+height:6px;
+
+background:#222;
+
+margin-top:35px;
+
+border-radius:20px;
+
+overflow:hidden;
+
+}
+
+.loader-progress{
+
+height:100%;
+
+width:0%;
+
+background:linear-gradient(90deg,#00bfff,#00ffaa);
+
+animation:loading 4s forwards;
+
+}
+
+#loaderText{
+
+margin-top:30px;
+
+font-size:32px;
+
+}
+
+#loaderSubText{
+
+margin-top:20px;
+
+color:#bbb;
+
+font-size:17px;
+
+}
+
+@keyframes loading{
+
+0%{width:0%;}
+
+100%{width:100%;}
+
+}
+
+@keyframes pulse{
+
+50%{
+
+transform:scale(1.08);
+
+box-shadow:0 0 80px #00bfff;
+
+}
 
 }
